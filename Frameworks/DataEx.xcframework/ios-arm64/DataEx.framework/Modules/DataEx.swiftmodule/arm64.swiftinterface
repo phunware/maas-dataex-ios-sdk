@@ -1,0 +1,77 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DataEx
+import Foundation
+import PWCore
+import Swift
+import UIKit
+import WebKit
+public protocol TakeoverDelegate : AnyObject {
+  func presentDataExTakeover(with viewController: UIKit.UIViewController)
+  func dismissDataExTakeover()
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TeaserView : UIKit.UIView {
+  weak public var delegate: DataEx.TakeoverDelegate?
+  public var buttonForegroundColor: UIKit.UIColor {
+    get
+    set
+  }
+  public var buttonBackgroundColor: UIKit.UIColor {
+    get
+    set
+  }
+  @objc override dynamic public func prepareForInterfaceBuilder()
+  @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AnalyticsManager {
+  public func sendTakeoverClickEvent()
+  public func sendTakeoverImpressionEvent()
+  @objc deinit
+}
+public let serviceName: Swift.String
+public let version: Swift.String
+public let linkManager: DataEx.LinkManager
+public let assetManager: DataEx.AssetManager
+public let analyticsManager: DataEx.AnalyticsManager
+public var isEligible: Swift.Bool {
+  get
+}
+public var environment: DataEx.Environment {
+  get
+  set
+}
+public func takeoverInstance(delegate: DataEx.TakeoverDelegate?) -> UIKit.UINavigationController
+public typealias BalancesCompletion = (Swift.Result<[DataEx.Asset], Swift.Error>) -> Swift.Void
+@_hasMissingDesignatedInitializers public class AssetManager {
+  public func balances(completion: DataEx.BalancesCompletion?)
+  @objc deinit
+}
+public enum Environment : Swift.String, Swift.CaseIterable {
+  case prod
+  case stage
+  case dev
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+  public typealias AllCases = [DataEx.Environment]
+  public static var allCases: [DataEx.Environment] {
+    get
+  }
+}
+public typealias LinkCompletion = (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void
+@_hasMissingDesignatedInitializers public class LinkManager {
+  public func linkWallet(completion: DataEx.LinkCompletion?)
+  public func isWalletInstalled() -> Swift.Bool
+  @objc deinit
+}
+public struct Asset {
+  public let balance: Swift.String
+  public let code: Swift.String
+  public let iconUrl: Swift.String
+}
+extension DataEx.Environment : Swift.Equatable {}
+extension DataEx.Environment : Swift.Hashable {}
+extension DataEx.Environment : Swift.RawRepresentable {}

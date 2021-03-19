@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DataEx  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a title="DataEx  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">DataEx 1.0.0 Docs</a> (62% documented)</p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">DataEx Reference</a>
+        <img id="carat" src="img/carat.png" />
+        DataEx  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/AnalyticsManager.html">AnalyticsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/AssetManager.html">AssetManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/LinkManager.html">LinkManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TeaserView.html">TeaserView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Global%20Variables.html#/s:6DataEx16analyticsManagerAA09AnalyticsD0Cvp">analyticsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Global%20Variables.html#/s:6DataEx12assetManagerAA05AssetD0Cvp">assetManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Global%20Variables.html#/s:6DataEx11environmentAA11EnvironmentOvp">environment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Global%20Variables.html#/s:6DataEx10isEligibleSbvp">isEligible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Global%20Variables.html#/s:6DataEx11linkManagerAA04LinkD0Cvp">linkManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Global%20Variables.html#/s:6DataEx11serviceNameSSvp">serviceName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Global%20Variables.html#/s:6DataEx7versionSSvp">version</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/Environment.html">Environment</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:6DataEx16takeoverInstance8delegateSo22UINavigationControllerCAA16TakeoverDelegate_pSg_tF">takeoverInstance(delegate:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/TakeoverDelegate.html">TakeoverDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/Asset.html">Asset</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:6DataEx18BalancesCompletiona">BalancesCompletion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:6DataEx14LinkCompletiona">LinkCompletion</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='data-exchange-sdk' class='heading'>Data Exchange SDK</h1>
+
+<p>The <code>Data Exchange SDK</code> enables publishers/app developers to earn PhunCoin and Phun Token by incorporating the SDK into their applications and engaging their users with the PhunWallet application.</p>
+
+<p>Integrating the SDK is simple and easy - with a sample implementation available as part of this repo.</p>
+
+<p>In addition to contributing users to the data exchange - developers can also send app usage events for users - and earn PhunCoin and Phun Token when app activity is used by brands as audiences.</p>
+
+<p>An easy to use dashboard in the <a href="maas.phunware.com">Phunware MaaS portal</a> provides a dashboard for developers to see their balances and track engagement from their users into the ecosystem.</p>
+
+<blockquote>
+<p>**<strong><em><sub>note</sub></em></strong>** <em><br/></em></p>
+
+<p><code>DataEx</code> <em>is currently only supported on</em></p>
+</blockquote>
+
+<ul>
+<li><p>*<strong><em>iOS 13.0 or greater</em></strong>*+.</p></li>
+<li><p>*<strong><em>Xcode 12 or greater</em></strong>*+.</p></li>
+</ul>
+
+<blockquote>
+<p><code>DataExSample</code> <em>should be opened with at least</em> *<strong><em><em>Xcode 12 or greater</em></em></strong>*<em>+.</em></p>
+</blockquote>
+
+<p><a id="installation"></a></p>
+<h2 id='using-dataex-sdk' class='heading'>Using DataEx SDK</h2>
+<h3 id='strong-em-cocoapods-installation-em-strong' class='heading'>*<strong><em>CocoaPods Installation</em></strong>*</h3>
+
+<ul>
+<li>Phunware recommends using <a href="http://www.cocoapods.org">CocoaPods</a> to integrate the framework. Simply add</li>
+</ul>
+
+<p><code>pod &#39;DataEx&#39;</code></p>
+
+<p>to your podfile.</p>
+
+<hr>
+
+<p><a id="usage-overview"></a></p>
+<h2 id='usage-overview' class='heading'>Usage Overview</h2>
+<h3 id='strong-em-initialization-em-strong' class='heading'>*<strong><em>Initialization</em></strong>*</h3>
+
+<p>The DataEx SDK needs to be initialized each time your application is started.  In this release of the DataEx SDK you should initialize DataEx to use our development environment.</p>
+<pre class="highlight plaintext"><code>
+DataEx.environment = .prod
+
+</code></pre>
+
+<p>You should initialize the DataEx SDK from your AppDelegate in the didFinishLaunchingWithOptions delegate method or from your Root View Controller.</p>
+<h2 id='pwcore-setup' class='heading'>PWCore Setup</h2>
+
+<p>The DataEx SDK requires configuration of <a href="(https://github.com/phunware/maas-core-ios-sdk/)">Phunware Core SDK</a> on application launch to provide application authentication with the Phunware MaaS suite and provides other built in useful features such as Analytics. In the MaaS portal, retrieve your application identifier, signature key, access key then in your application&rsquo;s AppDelegate, add the following into the didFinishLaunchingWithOptions delegate method:</p>
+<pre class="highlight plaintext"><code>
+PWCore.setApplicationID("YOUR_APPLICATION_IDENTIFIER",
+
+accessKey: "YOUR_ACCESS_KEY",
+
+signatureKey: "YOUR_SIGNATURE_KEY")
+
+</code></pre>
+
+<hr>
+<h2 id='bluetooth-permissions' class='heading'>Bluetooth Permissions</h2>
+
+<p>Beginning in iOS 13, applications that use the devices bluetooth features need to declare the NSBluetoothAlwaysUsageDescription key in their info.plists. The Phunware DataEx SDK has a dependency on the Phunware Core SDK and the Core SDK needs access to bluetooth to report on bluetooth status. Thus, your application will need to include the NSBluetoothAlwaysUsageDescription if it isn&rsquo;t already.</p>
+<h2 id='strong-em-tease-your-users-em-strong' class='heading'>*<strong><em>Tease your users</em></strong>*</h2>
+
+<p>In order for your users to claim any accrued digital assets and receive the full benefit of participating in the Data Exchange, they will have to install the PhunWallet mobile app. Publishers who successfully get their users to generate a Wallet in the PhunWallet mobile app will earn PhunCoin and/or Phun token for each unique user.</p>
+
+<p>We provide you a colorful platform specific widget that you can display anywhere in your app to call attention to installing the PhunWallet mobile app. The following instructions have code examples in the DataEx Sample project.</p>
+
+<ol>
+<li><p>Add a view to a storyboard or .xib file.</p></li>
+<li><p>Ensure it&rsquo;s class is &ldquo;TeaserView&rdquo;</p></li>
+<li><p>Ensure it&rsquo;s module is &ldquo;DataEx&rdquo;</p></li>
+<li><p>Connect the TeaserView to an IBOutlet in the ViewController of your choice.</p></li>
+<li><p>Ensure this view has userInteractionEnabled set to true</p></li>
+<li><p>Set the delegate of the Teaser View.</p></li>
+<li><p>Implement the presentation logic for the Takeover view.</p></li>
+</ol>
+<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">MyViewController</span><span class="p">:</span> <span class="kt">UIViewController</span> <span class="p">{</span>
+    <span class="c1">// Assuming you've added the TeaserView to your nib/storyboard</span>
+    <span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">teaserView</span><span class="p">:</span> <span class="kt">TeaserView</span><span class="o">!</span>
+
+    <span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">super</span><span class="o">.</span><span class="nf">viewDidLoad</span><span class="p">()</span>
+        <span class="n">teaserView</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="k">self</span>
+        <span class="n">teaserView</span><span class="o">.</span><span class="n">userInteractionEnabled</span> <span class="o">=</span> <span class="kc">true</span>
+    <span class="p">}</span>
+
+    <span class="k">override</span> <span class="kd">func</span> <span class="nf">viewWillAppear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">super</span><span class="o">.</span><span class="nf">viewWillAppear</span><span class="p">(</span><span class="n">animated</span><span class="p">)</span>
+        <span class="n">teaserView</span><span class="o">.</span><span class="n">isHidden</span> <span class="o">=</span> <span class="o">!</span><span class="kt">DataEx</span><span class="o">.</span><span class="n">isEligible</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">extension</span> <span class="kt">MyViewController</span><span class="p">:</span> <span class="kt">TakeoverDelegate</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">presentDataExTakeover</span><span class="p">(</span><span class="n">with</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Present the takeover modally, although it can be presented however you wish.</span>
+        <span class="nf">present</span><span class="p">(</span><span class="n">viewController</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">dismissDataExTakeover</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// Dismiss modal takeover</span>
+        <span class="nf">dismiss</span><span class="p">(</span><span class="nv">animated</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<hr>
+
+<p>DataEx branding doesn&rsquo;t match your app? We gotchu.</p>
+<pre class="highlight plaintext"><code>
+teaserView.buttonBackgroundColor = UIColor.red //or whatever color you want
+
+teaserView.buttonForegroundColor = UIColor.green //^^ditto
+
+</code></pre>
+<h2 id='strong-em-eligibility-em-strong' class='heading'>*<strong><em>Eligibility</em></strong>*</h2>
+
+<p>Not all of your users will be eligible for Data Exchange (see <a href="#advertising">advertising</a>).  You should check to see if the user is eligible before showing any Data Exchange branding. Simply check the DataEx static boolean. Eligibility is determined by if the user has allowed ad tracking via IDFA usage by disabling Limit Ad Tracking in the device settings.</p>
+<pre class="highlight plaintext"><code>
+DataEx.isEligible
+
+</code></pre>
+
+<p>To summarize:</p>
+
+<p>User is Eligible if they have not selected Limit Ad Tracking in their device settings</p>
+
+<p>User is not Eligible if they have selected Limit Ad Tracking in their device settings.</p>
+
+<hr>
+<h3 id='strong-em-checking-the-user-39-s-data-exchange-balance-em-strong' class='heading'>*<strong><em>Checking the user&rsquo;s Data Exchange balance</em></strong>*</h3>
+
+<p>You may want to display the user&rsquo;s current asset balance as your user accrues digital assets across the blockchain-powered, mobile-first cryptocurrency ecosystem.</p>
+
+<p>When requesting an updated balance we will also return you a current digital asset branding image to display alongside the balance.</p>
+<pre class="highlight plaintext"><code>
+DataEx.assetManager.balances { [weak self] result in
+    DispatchQueue.main.async {
+        switch result {
+        case .success(let assets):
+            // do something with the balances
+        case .failure(let error):
+            //handle failure
+        }
+    }
+}
+
+</code></pre>
+
+<hr>
+<h3 id='strong-linking-to-phuncoin-strong' class='heading'><strong>Linking to PhunCoin</strong></h3>
+
+<p>You have the option of letting your users link their loyalty coin balance to the Phunware PhunWallet app.  If you have enabled conversion of your loyalty coin into PhunCoin, your users will be able to convert at the threshold you specify.</p>
+<pre class="highlight swift"><code><span class="k">if</span> <span class="kt">DataEx</span><span class="o">.</span><span class="n">isEligible</span> <span class="p">{</span>
+    <span class="kt">DataEx</span><span class="o">.</span><span class="n">linkManager</span><span class="o">.</span><span class="n">linkWallet</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="n">result</span> <span class="k">in</span>
+        <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nv">success</span><span class="p">:</span>
+            <span class="nf">print</span><span class="p">(</span><span class="s">"PhunWallet app installed and linking is in progress."</span><span class="p">)</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+            <span class="nf">print</span><span class="p">(</span><span class="s">"PhunWallet app not installed or other failure."</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<hr>
+
+<p><a id="advertising"></a></p>
+<h2 id='a-bit-on-device-identifiers' class='heading'>A bit on device identifiers</h2>
+<h3 id='ios' class='heading'>iOS</h3>
+
+<p>In order to use the DataEx SDK, the user/device must allow ad tracking via IDFA usage by disabling Limit Ad Tracking in the device settings. For more information please review <a href="https://support.apple.com/en-us/HT205223%5D">Apple&rsquo;s Advertising &amp; Privacy document</a>.</p>
+
+<hr>
+
+<p><a id="class"></a></p>
+<h2 id='class-reference-documentation' class='heading'>Class Reference Documentation</h2>
+
+<p>The <a href="https://phunware.github.io/maas-dataex-ios-sdk/">Reference Documentation</a> has all of the detailed usage information including all the public methods, parameters, and convenience initializers.</p>
+
+<hr>
+
+<p><a id="privacy"></a></p>
+<h2 id='privacy' class='heading'>Privacy</h2>
+
+<p>You understand and consent to Phunware&rsquo;s Privacy Policy located at <a href="http://www.phunware.com/privacy">www.phunware.com/privacy</a>. If your use of Phunware&rsquo;s software requires a Privacy Policy of your own, you also agree to include the terms of Phunware&rsquo;s Privacy Policy in your Privacy Policy to your end users.</p>
+
+<hr>
+
+<p><a id="terms"></a></p>
+<h2 id='terms' class='heading'>Terms</h2>
+
+<p>Use of this software requires review and acceptance of our terms and conditions for developer use located at <a href="http://www.phunware.com/terms/">http://www.phunware.com/terms/</a></p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="https://github.com/phunware/maas-dataex-ios-sdk" target="_blank" rel="external">Phunware</a>. All rights reserved. (Last updated: 2021-03-19)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

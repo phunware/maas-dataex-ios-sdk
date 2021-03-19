@@ -1,0 +1,96 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/aaronpendley/dev/dataex-sdk-ios/DataEx/Common/Environment.swift",
+      "line": 13,
+      "symbol": "Environment",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronpendley/dev/dataex-sdk-ios/DataEx/Common/Environment.swift",
+      "line": 14,
+      "symbol": "Environment.prod",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronpendley/dev/dataex-sdk-ios/DataEx/Common/Environment.swift",
+      "line": 15,
+      "symbol": "Environment.stage",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronpendley/dev/dataex-sdk-ios/DataEx/Common/Environment.swift",
+      "line": 16,
+      "symbol": "Environment.dev",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronpendley/dev/dataex-sdk-ios/DataEx/Managers/AnalyticsManager.swift",
+      "line": 12,
+      "symbol": "AnalyticsManager",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronpendley/dev/dataex-sdk-ios/DataEx/Managers/AnalyticsManager.swift",
+      "line": 15,
+      "symbol": "AnalyticsManager.sendTakeoverClickEvent()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronpendley/dev/dataex-sdk-ios/DataEx/Managers/AnalyticsManager.swift",
+      "line": 20,
+      "symbol": "AnalyticsManager.sendTakeoverImpressionEvent()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronpendley/dev/dataex-sdk-ios/DataEx/Managers/LinkManager.swift",
+      "line": 57,
+      "symbol": "LinkManager.isWalletInstalled()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronpendley/dev/dataex-sdk-ios/DataEx/Models/Asset.swift",
+      "line": 11,
+      "symbol": "Asset",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronpendley/dev/dataex-sdk-ios/DataEx/UI/Controllers/Takeover/Page One/TakeoverViewController.swift",
+      "line": 14,
+      "symbol": "TakeoverDelegate.presentDataExTakeover(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronpendley/dev/dataex-sdk-ios/DataEx/UI/Controllers/Takeover/Page One/TakeoverViewController.swift",
+      "line": 15,
+      "symbol": "TakeoverDelegate.dismissDataExTakeover()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronpendley/dev/dataex-sdk-ios/DataEx/UI/Views/TeaserView.swift",
+      "line": 43,
+      "symbol": "TeaserView.prepareForInterfaceBuilder()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aaronpendley/dev/dataex-sdk-ios/DataEx/UI/Views/TeaserView.swift",
+      "line": 53,
+      "symbol": "TeaserView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/aaronpendley/dev/dataex-sdk-ios"
+}

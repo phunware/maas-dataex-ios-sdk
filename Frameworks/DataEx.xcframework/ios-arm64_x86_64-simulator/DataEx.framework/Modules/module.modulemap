@@ -1,0 +1,4 @@
+framework module DataEx {
+  header "DataEx-Swift.h"
+  requires objc
+}
