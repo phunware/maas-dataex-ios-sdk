@@ -1,15 +1,11 @@
 Data Exchange SDK
 =====
 
-The `Data Exchange SDK` enables publishers/app developers to earn PhunCoin and Phun Token by incorporating the SDK into their applications and engaging their users with the PhunWallet application.
+The `Data Exchange SDK` enables publishers/app developers to earn PhunCoin and PhunToken by incorporating the SDK into their applications and engaging their users with the PhunWallet application.
 
 
 
-Integrating the SDK is simple and easy - with a sample implementation available as part of this repo.
-
-
-
-In addition to contributing users to the data exchange - developers can also send app usage events for users - and earn PhunCoin and Phun Token when app activity is used by brands as audiences.
+In addition to contributing users to the data exchange - developers can also send app usage events for users - and earn PhunCoin and PhunToken when app activity is used by brands as audiences.
 
 
 
@@ -24,8 +20,6 @@ An easy to use dashboard in the [Phunware MaaS portal](maas.phunware.com) provid
 - ****iOS 13.0 or greater****+.
 
 - ****Xcode 12 or greater****+.
-
->  `DataExSample` _should be opened with at least_ ****_Xcode 12 or greater_****_+._
 
 <a id="installation"></a>
 
@@ -191,8 +185,8 @@ DataEx.assetManager.balances { [weak self] result in
 
 ***
 
-### **Linking to PhunCoin**
-You have the option of letting your users link their loyalty coin balance to the Phunware PhunWallet app.  If you have enabled conversion of your loyalty coin into PhunCoin, your users will be able to convert at the threshold you specify.
+### **Linking to PhunWallet**
+You have the option of letting your users link to the Phunware PhunWallet app; doing so will result the phuncoin balance to show up in the wallet.
 
 ```swift
 if DataEx.isEligible {
@@ -215,7 +209,7 @@ if DataEx.isEligible {
 
 ### iOS
 
-In order to use the DataEx SDK, the user/device must allow ad tracking via IDFA usage by disabling Limit Ad Tracking in the device settings. For more information please review [Apple's Advertising & Privacy document](https://support.apple.com/en-us/HT205223]).
+In order to use the DataEx SDK, the user/device must allow ad tracking via IDFA usage by disabling Limit Ad Tracking in the device settings. For more information please review [Apple's Advertising & Privacy document](https://support.apple.com/en-us/HT205223).
 
 ***
 
