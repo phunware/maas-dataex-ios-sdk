@@ -1,11 +1,11 @@
-Data Exchange SDK
+Data SDK
 =====
 
-The `Data Exchange SDK` enables publishers/app developers to earn PhunCoin and PhunToken by incorporating the SDK into their applications and engaging their users with the PhunWallet application.
+The `Data SDK` enables publishers/app developers to earn PhunCoin by incorporating the SDK into their applications and engaging their users with the PhunWallet application.
 
 
 
-In addition to contributing users to the data exchange - developers can also send app usage events for users - and earn PhunCoin and PhunToken when app activity is used by brands as audiences.
+In addition to contributing users to the data SDK - developers can also send app usage events for users - and earn PhunCoin when app activity is used by brands as audiences.
 
 
 
@@ -15,7 +15,7 @@ An easy to use dashboard in the [Phunware MaaS portal](maas.phunware.com) provid
 
 >  *****<sub>note</sub>***** _<br/>_
 
->  `DataEx` _is currently only supported on_
+>  `Data SDK` _is currently only supported on_
 
 - ****iOS 13.0 or greater****+.
 
@@ -23,7 +23,7 @@ An easy to use dashboard in the [Phunware MaaS portal](maas.phunware.com) provid
 
 <a id="installation"></a>
 
-## Using DataEx SDK
+## Using Data SDK
 
 ### ****CocoaPods Installation****
 
@@ -51,7 +51,7 @@ to your podfile.
 
 ### ****Initialization****
 
-The DataEx SDK needs to be initialized each time your application is started.  In this release of the DataEx SDK you should initialize DataEx to use our development environment.
+The Data SDK needs to be initialized each time your application is started.  In this release of the Data SDK you should initialize DataEx to use our development environment.
 
 ```Swift
 
@@ -59,12 +59,12 @@ DataEx.environment = .prod
 
 ```
 
-You should initialize the DataEx SDK from your AppDelegate in the didFinishLaunchingWithOptions delegate method or from your Root View Controller.
+You should initialize the Data SDK from your AppDelegate in the didFinishLaunchingWithOptions delegate method or from your Root View Controller.
 
 
 ## PWCore Setup
 
-The DataEx SDK requires configuration of [Phunware Core SDK]((https://github.com/phunware/maas-core-ios-sdk/)) on application launch to provide application authentication with the Phunware MaaS suite and provides other built in useful features such as Analytics. In the MaaS portal, retrieve your application identifier, signature key, access key then in your application's AppDelegate, add the following into the didFinishLaunchingWithOptions delegate method:
+The Data SDK requires configuration of [Phunware Core SDK]((https://github.com/phunware/maas-core-ios-sdk/)) on application launch to provide application authentication with the Phunware MaaS suite and provides other built in useful features such as Analytics. In the MaaS portal, retrieve your application identifier, signature key, access key then in your application's AppDelegate, add the following into the didFinishLaunchingWithOptions delegate method:
 
 ````Swift
 
@@ -80,13 +80,13 @@ signatureKey: "YOUR_SIGNATURE_KEY")
 
 ## Bluetooth Permissions
 
-Beginning in iOS 13, applications that use the devices bluetooth features need to declare the NSBluetoothAlwaysUsageDescription key in their info.plists. The Phunware DataEx SDK has a dependency on the Phunware Core SDK and the Core SDK needs access to bluetooth to report on bluetooth status. Thus, your application will need to include the NSBluetoothAlwaysUsageDescription if it isn't already.
+Beginning in iOS 13, applications that use the devices bluetooth features need to declare the NSBluetoothAlwaysUsageDescription key in their info.plists. The Phunware Data SDK has a dependency on the Phunware Core SDK and the Core SDK needs access to bluetooth to report on bluetooth status. Thus, your application will need to include the NSBluetoothAlwaysUsageDescription if it isn't already.
 
 ## ****Tease your users****
 
-In order for your users to claim any accrued digital assets and receive the full benefit of participating in the Data Exchange, they will have to install the PhunWallet mobile app. Publishers who successfully get their users to generate a Wallet in the PhunWallet mobile app will earn PhunCoin and/or Phun token for each unique user.
+In order for your users to claim any accrued digital assets and receive the full benefit of participating in the PhunCoin ecosystem, they will have to install the PhunWallet mobile app. Publishers who successfully get their users to generate a Wallet in the PhunWallet mobile app will earn PhunCoin for each unique user.
 
-We provide you a colorful platform specific widget that you can display anywhere in your app to call attention to installing the PhunWallet mobile app. The following instructions have code examples in the DataEx Sample project.
+We provide you a colorful platform specific widget that you can display anywhere in your app to call attention to installing the PhunWallet mobile app. 
 
 1. Add a view to a storyboard or .xib file.
 
@@ -134,7 +134,7 @@ extension MyViewController: TakeoverDelegate {
 
 ***
 
-DataEx branding doesn't match your app? We gotchu.
+Data SDK branding doesn't match your app? We gotchu.
 
 ````Swift
 
@@ -146,7 +146,7 @@ teaserView.buttonForegroundColor = UIColor.green //^^ditto
 
 ## ****Eligibility****
 
-Not all of your users will be eligible for Data Exchange (see [advertising](#advertising)).  You should check to see if the user is eligible before showing any Data Exchange branding. Simply check the DataEx static boolean. Eligibility is determined by if the user has allowed ad tracking via IDFA usage by disabling Limit Ad Tracking in the device settings.
+Not all of your users will be eligible for PhunCoin (see [advertising](#advertising)).  You should check to see if the user is eligible before showing any PhunCoin branding. Simply check the DataEx static boolean. Eligibility is determined by if the user has allowed ad tracking via IDFA usage by disabling Limit Ad Tracking in the device settings.
 
 ````Swift
 
@@ -156,13 +156,13 @@ DataEx.isEligible
 
 To summarize:
 
-User is Eligible if they have not selected Limit Ad Tracking in their device settings
+User is Eligible if they have not selected Limit Ad Tracking in their device settings.
 
 User is not Eligible if they have selected Limit Ad Tracking in their device settings.
 
 ***
 
-### ****Checking the user's Data Exchange balance****
+### ****Checking the user's PhunCoin balance****
 
 You may want to display the user's current asset balance as your user accrues digital assets across the blockchain-powered, mobile-first cryptocurrency ecosystem.
 
@@ -209,7 +209,7 @@ if DataEx.isEligible {
 
 ### iOS
 
-In order to use the DataEx SDK, the user/device must allow ad tracking via IDFA usage by disabling Limit Ad Tracking in the device settings. For more information please review [Apple's Advertising & Privacy document](https://support.apple.com/en-us/HT205223).
+In order to use the Data SDK, the user/device must allow ad tracking via IDFA usage by disabling Limit Ad Tracking in the device settings. For more information please review [Apple's Advertising & Privacy document](https://support.apple.com/en-us/HT205223).
 
 ***
 
